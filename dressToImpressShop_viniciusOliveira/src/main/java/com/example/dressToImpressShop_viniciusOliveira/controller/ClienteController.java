@@ -15,10 +15,6 @@ public class ClienteController {
     @Autowired
     private ClienteRepository clienteRepository;
 
-    public ClienteController(ClienteRepository clienteRepository) {
-        this.clienteRepository = clienteRepository;
-    }
-
     @GetMapping
     public List<Cliente> visualizarTodos(){
         return clienteRepository.findAll();
