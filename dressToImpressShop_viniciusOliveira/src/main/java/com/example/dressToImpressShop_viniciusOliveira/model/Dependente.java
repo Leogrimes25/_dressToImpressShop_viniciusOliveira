@@ -8,6 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
@@ -29,6 +30,7 @@ public class Dependente {
     private Genero genero;
 
     @ManyToOne
+    @JoinColumn(name = "cliente_id",nullable = false,foreignKey = @ForeignKey(name = "fk_cliente_id"))
     private Cliente cliente;
 
     public enum Genero {
