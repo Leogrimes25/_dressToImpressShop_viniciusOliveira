@@ -1,0 +1,10 @@
+ALTER TABLE dependentes
+DROP CONSTRAINT fk_cliente_id; -- Primeiro, exclua a restrição de chave estrangeira existente
+
+ALTER TABLE dependentes
+ADD CONSTRAINT fk_cliente_id -- Em seguida, adicione a restrição de chave estrangeira com ON DELETE CASCADE
+FOREIGN KEY (cliente_id)
+REFERENCES clientes(id)
+ON DELETE CASCADE;
+
+Esse srcipt foi necessário para adicionar a correta exclusão em cascata dos dependentes.
