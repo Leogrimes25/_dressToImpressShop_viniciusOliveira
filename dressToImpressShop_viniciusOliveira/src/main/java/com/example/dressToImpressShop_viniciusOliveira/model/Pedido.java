@@ -7,10 +7,7 @@ import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -29,33 +26,21 @@ public class Pedido {
     @NotNull
     private FormaPagamento formaPagamento;
 
-    @ElementCollection
-    private List<Carrinho> carrinhoList = new ArrayList<>();
+    @NotEmpty
+    private int quantidade;
+
+    @NotEmpty
+    private double valorUnitario;
+
+    @ManyToOne
+    private Cliente cliente;
+
+    @ManyToOne
+    private Produto produto;
 
     public enum FormaPagamento {
         DINHEIRO, CARTAO_CREDITO, CHAVE_PIX
     }
-
-    // Adicionar um item ao pedido
-    public void adicionarItem(Produto produto, int quantidade, double valorUnitario) {
-        this.carrinhoList.add(new Carrinho(produto, quantidade, valorUnitario));
-    }
-
-
-    @AllArgsConstructor
-    @NoArgsConstructor
-    @Data
-    @Embeddable
-    @Table(name = "carrinho")
-    public static class Carrinho implements Serializable {
-
-        @ManyToOne
-        private Produto produto;
-
-        @NotEmpty
-        private int quantidade;
-
-        @NotEmpty
-        private double valorUnitario;
-    }
 }
+
+
