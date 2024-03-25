@@ -40,4 +40,4 @@ Sobre os desafios lançados foram contemplados os :
 Utilizar Bootstrap ✓.
 Utilizar outra template engine diferente do thymeleaf  ✓.(Mustache Utilizado)
 Utilizar o SGBD PostgreSQL ao invés do H2 ✓.
-Validar o campo de telefone com javascript( Foi validado mas utilizando anotação @Patern e Regex).
+Validar o campo de telefone com javascript( Foi validado mas utilizando anotação @Pattern e Regex).
