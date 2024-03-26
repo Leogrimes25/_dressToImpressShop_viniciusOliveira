@@ -19,3 +19,25 @@ de nascimento, gênero (masculino, feminino, não informado). Tudo num CRUD: Cre
 Delete. Ao excluir um cliente, os dependentes são excluídos em cascata
 
 Contemplado via : Dependente.java/DependenteRepositoy/DependenteController/COMMANDS SQL
+
+UserStory 4 Manter e exibir informação de pedidos (2,0 pontos)
+- Ao realizar um pedido, todos os produtos cadastrados são exibidos em uma listagem, ordenados
+alfabeticamente pelo nome. O cliente deve selecionar os itens com a quantidade desejada. Ao cadastrar o
+pedido, o cliente deve selecionar a forma de pagamento (dinheiro, cartão de crédito ou chave pix por tipo).
+Guarde os dados pertinentes para a forma de pagamento (número do cartão ou valor pago).
+- Ao cadastrar o pedido, os seguintes dados devem ser guardados: data do pedido, os itens que foram
+pedidos (quantidade de produtos e valor unitário). Não há controle de estoque, a quantidade de produtos
+disponível é infinita.
+- Ao listar os pedidos, será possível visualizar o nome do cliente, o nome do produto, a quantidade
+comprada, o valor unitário, o valor total dos produtos, o total do pedido, produtos com os valores e
+quantidades, o cálculo de imposto (fixo em 35,75%) e a forma de pagamento.
+- Ao excluir o pedido, o registro de produtos e de clientes não é afetado.
+- Ao atualizar o pedido, é um caos.
+- Tudo num CRUD: Create, Read, Update, Delete.
+Contemplado, parcialmente, devido dificuldades encontradas via : Pedido.java/PedidoRepository/PedidoController/Listagem_Pedidos.html.
+
+Sobre os desafios lançados foram contemplados os :
+Utilizar Bootstrap ✓.
+Utilizar outra template engine diferente do thymeleaf  ✓.(Mustache Utilizado)
+Utilizar o SGBD PostgreSQL ao invés do H2 ✓.
+Validar o campo de telefone com javascript( Foi validado mas utilizando anotação @Pattern e Regex).
