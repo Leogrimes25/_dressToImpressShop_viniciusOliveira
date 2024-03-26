@@ -34,7 +34,7 @@ quantidades, o cálculo de imposto (fixo em 35,75%) e a forma de pagamento.
 - Ao excluir o pedido, o registro de produtos e de clientes não é afetado.
 - Ao atualizar o pedido, é um caos.
 - Tudo num CRUD: Create, Read, Update, Delete.
-Contemplado, parcialmente, devido dificuldades encontradas via : Pedido.java/PedidoRepository/PedidoController/Listagem_Pedidos.html.
+Contemplado, parcialmente, devido dificuldades encontradas via : Pedido.java/PedidoRepository/PedidoController/ListagemController/pedidos.musctache/COMMANDS SQL
 
 Sobre os desafios lançados foram contemplados os :
 Utilizar Bootstrap ✓.
