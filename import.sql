@@ -1,13 +1,9 @@
-Primeiramente adicionando 10 registros de produtos:
-INSERT INTO produtos(nome_produto, tipo_tecido, marca, preco_compra, preco_venda, data_cadastro)
+Primeiramente adicionando registros de produtos:
+
+INSERT INTO produtos(nome_produto,marca,modelo,capacidade_memoria,preco_compra,preco_venda,nome_arquivo,data_cadastro)
 VALUES
-    ('Camiseta', 'Algodao', 'ModaStyle', 20.0, 35.0, '2024-04-04'),
-    ('Calca Jeans', 'Denim', 'FashionFit', 50.0, 80.0, '2024-04-04'),
-    ('Blusa de Trico', 'La', 'CozyWear', 40.0, 65.0, '2024-04-04'),
-    ('Shorts Esportivo', 'Poliamida', 'SportyFit', 30.0, 50.0, '2024-04-04'),
-    ('Vestido Casual', 'Viscose', 'UrbanChic', 60.0, 95.0, '2024-04-04'),
-    ('Casaco de Inverno', 'Poliester', 'WarmHug', 80.0, 130.0, '2024-04-04'),
-    ('Sapato Social', 'Couro', 'Elegance', 70.0, 110.0, '2024-04-04'),
-    ('Meia Esportiva', 'Algodao', 'AthleticWear', 5.0, 10.0, '2024-04-04'),
-    ('Jaqueta Jeans', 'Denim', 'DenimFever', 45.0, 75.0, '2024-04-04'),
-    ('Bermuda Cargo', 'Tactel', 'AdventureReady', 25.0, 45.0, '2024-04-04');
+('GPU','AMD RADEON','RX 7600 Gaming OC','8GB','1200.00','1700.00','placa-de-video-gigabyte-amd-radeon-rx-7600.jpg','2024-04-04'),
+('GPU','AMD RADEON','RX 6600 EAGLE','8GB','900.00','1400.00','placa-de-video-gigabyte-amd-radeon-rx-6600.jpg','2024-04-04'),
+('GPU','Nvidia Gigabyte','GeForce RTX 4060 EAGLE OC','8GB','1400.00','2000.00','placa-de-video-gigabyte-nvidia-geforce-rtx-4060.jpg','2024-04-04'),
+('GPU','Nvidia MSI','GTX 1650 Ventus XS OC','4GB','500.00','850.00','placa-de-video-msi-nvidia-geforce-gtx-1650.jpg','2024-04-04'),
+('GPU','Palit','GeForce RTX 4080 Super Gaming Pro','16GB','600.00','7500.00','placa-de-video-palit-geforce-rtx-4080-super-gaming-pro-oc','2024-04-04');
