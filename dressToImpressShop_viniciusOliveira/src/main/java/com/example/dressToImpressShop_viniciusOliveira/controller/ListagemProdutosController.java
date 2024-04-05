@@ -34,9 +34,17 @@ public class ListagemProdutosController {
     }
 
     @GetMapping("/buscar")
-    public String buscarProdutosPorNome(@RequestParam("nome") String nome, Model model) {
+    public String buscarProdutosPorNome(@RequestParam("termo") String termo, Model model) {
         String sql = "SELECT * FROM produtos WHERE nome_produto = ?";
-        List<Map<String, Object>> produtos = jdbcTemplate.queryForList(sql, nome);
+        List<Map<String, Object>> produtos = jdbcTemplate.queryForList(sql, termo);
+        model.addAttribute("produtos",produtos);
+        return "produtos";
+    }
+
+    @GetMapping("/buscar/marca")
+    public String buscarProdutosPorMarca(@RequestParam("termo") String termo, Model model) {
+        String sql = "SELECT * FROM produtos WHERE marca = ?";
+        List<Map<String, Object>> produtos = jdbcTemplate.queryForList(sql, termo);
         model.addAttribute("produtos",produtos);
         return "produtos";
     }
