@@ -10,7 +10,7 @@ Contemplado via : Dependente.java/DependenteRepositoy/DependenteController/COMMA
 
 UserStory 4 Manter e exibir informação de pedidos (2,0 pontos)
 Contemplado, parcialmente, devido dificuldades encontradas via : Pedido.java/PedidoRepository/PedidoController/ListagemController/pedidos.musctache/COMMANDS SQL
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Unidade 3 !
 UserStory 6 e User Story 7 foram contemplaodos via : produtos.mustache/ListagemProdutosController.
 
