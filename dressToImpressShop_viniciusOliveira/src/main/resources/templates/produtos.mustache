@@ -38,9 +38,11 @@
         <th scope="col">Id do Produto</th>
         <th scope="col">Nome do Produto</th>
         <th scope="col">Marca</th>
-        <th scope="col">Tipo do Tecido</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Capacidade de Memória</th>
         <th scope="col">Preço de Compra</th>
         <th scope="col">Preço de Venda</th>
+        <th scope="col">Imagem</th>
         <th scope="col">Data do Cadastro</th>
     </tr>
     </thead>
@@ -53,9 +55,11 @@
         <td>{{id}}</td>
         <td>{{nome_produto}}</td>
         <td>{{marca}}</td>
-        <td>{{tipo_tecido}}</td>
+        <td>{{modelo}}</td>
+        <td>{{capacidade_memoria}}</td>
         <td>{{preco_compra}}</td>
         <td>{{preco_venda}}</td>
+        <td><img src="/Imagens/{{nome_arquivo}}" alt="{{nome_produto}}" width="100"></td>
         <td>{{data_cadastro}}</td>
     </tr>
     {{/produtos}}

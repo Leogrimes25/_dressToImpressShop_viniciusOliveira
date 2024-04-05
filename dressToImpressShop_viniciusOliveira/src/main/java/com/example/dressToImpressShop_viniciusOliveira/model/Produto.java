@@ -27,7 +27,10 @@ public class Produto {
     private String marca;
 
     @NotEmpty
-    private String tipoTecido;
+    private String modelo;
+
+    @NotEmpty
+    private String capacidadeMemoria;
 
     @NotEmpty
     @DecimalMin(value = "0.0", inclusive = false)
@@ -36,6 +39,9 @@ public class Produto {
     @NotEmpty
     @DecimalMin(value = "0.0", inclusive = false)
     private Double precoVenda;
+
+    @NotEmpty
+    private String nomeArquivo;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCadastro;
