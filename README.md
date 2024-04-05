@@ -36,6 +36,13 @@ quantidades, o cálculo de imposto (fixo em 35,75%) e a forma de pagamento.
 - Tudo num CRUD: Create, Read, Update, Delete.
 Contemplado, parcialmente, devido dificuldades encontradas via : Pedido.java/PedidoRepository/PedidoController/ListagemController/pedidos.musctache/COMMANDS SQL
 
+Unidade 3 !
+UserStory 6 e User Story 7 foram contemplaodos via : produtos.mustache/ListagemProdutosController.
+
+User Story 8 foi contemplada via contato.html e ContatoController. Adicionei meu número por motivos de teste.
+
+
+
 Sobre os desafios lançados foram contemplados os :
 Utilizar Bootstrap ✓.
 Utilizar outra template engine diferente do thymeleaf  ✓.(Mustache Utilizado)
