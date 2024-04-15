@@ -12,11 +12,11 @@ UserStory 4 Manter e exibir informação de pedidos (2,0 pontos)
 Contemplado, parcialmente, devido dificuldades encontradas via : Pedido.java/PedidoRepository/PedidoController/ListagemController/pedidos.musctache/COMMANDS SQL
 
 Unidade 3 !
-UserStory 6 e User Story 7 foram contemplaodos via : produtos.mustache/ListagemProdutosController.
+UserStory 6 e User Story 7 foram contemplados via : produtos.mustache/ListagemProdutosController.
 
 User Story 8 foi contemplada via contato.html e ContatoController. Adicionei meu número por motivos de teste.
 
-User Story 14 foi contemplada com alerações em produto.java/ juntamnete com produtos.musctache e ListagemProdutosController. As imagens estão inseridas em resources/public/Imagens.
+User Story 14 foi contemplada com alterações em produto.java/ juntamente com produtos.musctache e ListagemProdutosController. As imagens estão inseridas em resources/public/Imagens.
 
 
 Sobre os desafios lançados foram contemplados os :
